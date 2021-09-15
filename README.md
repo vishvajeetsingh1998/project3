@@ -32,8 +32,6 @@ In the customer dashboard, the system allows the customer to place orders, edit/
 5.Request Bill:
 	The system allows the customer to request the bill any time after the order is placed. The system displays the consolidated receipt/bill. The customer can pay through the system or request help to get printed bills or pay through cash. The bill will be sent as a link to mail or text message.
 
-
-
 Kitchen Manager / Head Chef Dashboard:
 In the kitchen Manager dashboard, 
 •	The system notifies the kitchen manager once the order is placed by a customer. 
