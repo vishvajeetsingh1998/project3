@@ -88,10 +88,6 @@ In the customer dashboard, the system allows the customer to place orders, edit/
 5.Request Bill:
 	The system allows the customer to request the bill any time after the order is placed. The system displays the consolidated receipt/bill. The customer can pay through the system or request help to get printed bills or pay through cash. The bill will be sent as a link to mail or text message.
 
-6.Feedback:
-	The system allows the customer to rate his/her experience in the restaurant through a form (Multiple choice questions). The feature will be automatically displayed once when the service is completed / closed. 
-The feedback is optional. So, the customer has options to skip.
-
 
 Kitchen Manager / Head Chef Dashboard:
 In the kitchen Manager dashboard, 
