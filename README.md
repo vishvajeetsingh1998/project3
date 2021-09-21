@@ -1,124 +1,44 @@
 # project3
-Restaurant Management System / contact-less dining
-
-Abstract:
-Restaurant Management System is a system to automate the day-to-day tasks in a restaurant. The main scope of this system is to improve the performance of the restaurant by eradicating the paperwork.
-
-Users/ Actors:
-1.	Customers - interact with the system to place / modify order, get receipt and give feedback.  
-2.	Kitchen Manager / Head Chef - interacts with the system to approves the order, marks as ‘Prepared’ when dish is prepared, and marks “Served” when the dish is served to the customer.
-3.	Supervisor - interacts with the system to check the table status (Empty or filled). He receives notification when the customer asks for help through the system and if the customer requests the paper bill.
-4.	Admin - interact with the system to manage the chefs and menu items.
 
 
-Customer Dashboard:
-In the customer dashboard, the system allows the customer to place orders, edit/cancel order, request help, request bill.
+# Restaurant-Management-System
 
-1.Place order:
-	In the place order menu, the system shows the list of dishes available. Each dish will have an image, time, and its price. 
-	Depending on the time, the system will show the corresponding dishes automatically. (For eg: Breakfast dishes must be available from 8AM to 11AM, Lunch dishes must be available from 11AM to 3:30PM)
+## Description: 
 
-2. Edit / Cancel Order:
-	After the order is placed, the system allows the customer can edit or cancel the placed order. This option will be available only after the order is placed.
+Restaurant management system have four modules namely Customer, Admin, Kitchen Master, Supervisor.
+             Customer can order the dishes, customize the dishes before placing order. Customer should choose a paymentmode before placing order, A bill is generated after          payment. 
+             Kitchen Master will receive all the orders placed by the customer and acknowledge after dish is served.
+             Supervisor will resolve the tickets raised by the custome.
+             Admin can add dishes, customize the dishes, add/remove Kitchen master, add/remove supervisor. 
+    
+    
+## Technologies used: 
+* HTML
+* CSS
+* Bootstrap
+* Angular Material
+* Prime NG
+* Angular10
+* Spring Boot
+* Hibernate.
 
-3. Timer:
-	After the order is placed, the system automatically calculates the time for the dishes to be served.  
-	3.1 Timer Rules:
-•	The timer of an order is the sum of time taken for each order to cook.
-•	If a customer orders the same dish more than once, the time will be calculated as n+2 minutes for each item (Where n is the time taken for each item).
-4. Help:
-	The system allows the customer to request help when he/she has need water or any queries regarding the menu/dishes.
-
-5.Request Bill:
-	The system allows the customer to request the bill any time after the order is placed. The system displays the consolidated receipt/bill. The customer can pay through the system or request help to get printed bills or pay through cash. The bill will be sent as a link to mail or text message.
-
-Kitchen Manager / Head Chef Dashboard:
-In the kitchen Manager dashboard, 
-•	The system notifies the kitchen manager once the order is placed by a customer. 
-•	The system provides all the current order details (Order number, table number, dishes to be served etc.).
-•	The system allows the kitchen manager to mark the order has complete when the dishes are served to the customers.
-•	 The system allows the kitchen manager to cancel a dish/order, when a customer request (Kitchen manager can reject the request if the dish has been prepared). 
-•	The system allows the kitchen manager to mark an item/dish from the menu as “Unavailable,” if the dish is unavailable or cannot be served.
-
-Supervisor Dashboard:
-In the hotel supervisor dashboard,
-•	The system allows the supervisor to view all the order details (Order number, table number, dishes to be served etc).
-•	The system will notify you when an order is completed.
-•	The system allows the supervisor to view the unoccupied tables 
-•	The system will notify the supervisor if the customer requests help from the application.
-•	The system allows the supervisor to generate a bill / receipt for a table / customer and mark as “Paid” if the customer mode of transaction was cash.
-
-Admin Dashboard:
-In the Admin Dashboard, admin has complete control all the stakeholders (Customers, Hall & kitchen Manager).
-•	The system allows the admin to create user credentials for hall and kitchen manager.
-•	The system allows the admin to add, modify and delete dishes in the inventory based on the timing (Breakfast, afternoon or dinner)
-•	The system allows the admin to view all the order details of a customer. 
+ Angular Branch contain Angular part of this application. Spring Branch contain Spring part of this application
+ 
+ ## Features:
+  * Customer will be able to add or remove/add order from the cart.
+  * After placing the order costomer can cancel the order.
+  * Once the order is received, Kitchen master will be able to acknowledge it by clicking on     serving.
+  * Admin can remove/add the dishes, also admin will be able to add/remove     kitchen/supervisor.
+  * For any help customer will raise a ticket for help, supervisor will get a notification  and acknowledge.
+  
+  ### To-Do
+   * Will use jwt in the future.
 
 
-Restaurant Management System / contact-less dining
-
-Abstract:
-Restaurant Management System is a system to automate the day-to-day tasks in a restaurant. The main scope of this system is to improve the performance of the restaurant by eradicating the paperwork.
-
-Users/ Actors:
-1.	Customers - interact with the system to place / modify order, get receipt and give feedback.  
-2.	Kitchen Manager / Head Chef - interacts with the system to approves the order, marks as ‘Prepared’ when dish is prepared, and marks “Served” when the dish is served to the customer.
-3.	Supervisor - interacts with the system to check the table status (Empty or filled). He receives notification when the customer asks for help through the system and if the customer requests the paper bill.
-4.	Admin - interact with the system to manage the chefs and menu items.
-
-
-Customer Dashboard:
-In the customer dashboard, the system allows the customer to place orders, edit/cancel order, request help, request bill.
-
-1.Place order:
-	In the place order menu, the system shows the list of dishes available. Each dish will have an image, time, and its price. 
-	Depending on the time, the system will show the corresponding dishes automatically. (For eg: Breakfast dishes must be available from 8AM to 11AM, Lunch dishes must be available from 11AM to 3:30PM)
-
-2. Edit / Cancel Order:
-	After the order is placed, the system allows the customer can edit or cancel the placed order. This option will be available only after the order is placed.
-
-3. Timer:
-	After the order is placed, the system automatically calculates the time for the dishes to be served.  
-	3.1 Timer Rules:
-•	The timer of an order is the sum of time taken for each order to cook.
-•	If a customer orders the same dish more than once, the time will be calculated as n+2 minutes for each item (Where n is the time taken for each item).
-4. Help:
-	The system allows the customer to request help when he/she has need water or any queries regarding the menu/dishes.
-
-5.Request Bill:
-	The system allows the customer to request the bill any time after the order is placed. The system displays the consolidated receipt/bill. The customer can pay through the system or request help to get printed bills or pay through cash. The bill will be sent as a link to mail or text message.
-
-
-Kitchen Manager / Head Chef Dashboard:
-In the kitchen Manager dashboard, 
-•	The system notifies the kitchen manager once the order is placed by a customer. 
-•	The system provides all the current order details (Order number, table number, dishes to be served etc.).
-•	The system allows the kitchen manager to mark the order has complete when the dishes are served to the customers.
-•	 The system allows the kitchen manager to cancel a dish/order, when a customer request (Kitchen manager can reject the request if the dish has been prepared). 
-•	The system allows the kitchen manager to mark an item/dish from the menu as “Unavailable,” if the dish is unavailable or cannot be served.
-
-Supervisor Dashboard:
-In the hotel supervisor dashboard,
-•	The system allows the supervisor to view all the order details (Order number, table number, dishes to be served etc).
-•	The system will notify you when an order is completed.
-•	The system allows the supervisor to view the unoccupied tables 
-•	The system will notify the supervisor if the customer requests help from the application.
-•	The system allows the supervisor to generate a bill / receipt for a table / customer and mark as “Paid” if the customer mode of transaction was cash.
-
-Admin Dashboard:
-In the Admin Dashboard, admin has complete control all the stakeholders (Customers, Hall & kitchen Manager).
-•	The system allows the admin to create user credentials for hall and kitchen manager.
-•	The system allows the admin to add, modify and delete dishes in the inventory based on the timing (Breakfast, afternoon or dinner)
-•	The system allows the admin to view all the order details of a customer. 
-
-Application Journey:
--	Customer has to enter his details (Name, phone number and mail id) in order to use the application.
--	Once the credentials are entered, the system allows the customer to scroll through the menu and select the dishes.
--	Once the order is confirmed by the customer, the kitchen manager/hotel manager will be notified about the order details.
--	The kitchen manager allocates the dishes to his chefs based on the order. The kitchen Manager serves the order based on the order queue.
--	The kitchen manager will mark the order as “Complete”, when the the order has been served to the customer.
--	The hall manager will also be notified once the order has been served to the customer.
--	Customers can close the order by requesting bill. The bill/ receipt will be sent to your mail id and mobile. The payment can be made through the mobile or through the application using UPI, net banking or cash (by requesting help from the hall manager)
--	The hall manager will be notified when the order is completed / closed. If the customer pays through cash, the hall manager has to manually mark the order as complete.
-
-
+  ## Usage
+   open the project on eclipse API. Add all the dependencies, right click and run your
+   project on tomcat server, once the project is started open the url and write
+   localhost:8080, back-end code will run on this url. Now to run the project on front-end,
+   first import your code vs-studio or notepad execute the project in the command line
+   interface by writing the command ng serve, this will open the project on web server from
+   where all the functionalities can be accessed and used.
